@@ -22,14 +22,10 @@
       gesture-detector
       id="scene"
     >
-      <a-assets>
-        <a-asset-item
-          id="bowser"
-          src="https://cdn.glitch.com/06bd98b4-97ee-4c07-a546-fe39ca205034%2Fbowser.glb"
-        >
-        </a-asset-item>
+ 
+    <a-assets>
+        <a-asset-item id="tree" src="assets/building-glb-dae/building-glb.dae"></a-asset-item>
       </a-assets>
-      
 
       <a-marker
         preset="hiro"
@@ -38,9 +34,13 @@
         cursor="fuse: false; rayOrigin: mouse;"
         id="markerA"
       >
-      <a-entity collada-model="url(https://github.com/Dejan11/location-based-ar-tutorial/blob/main/assets/building-glb-dae/building-glb.dae)"></a-entity>
-        
-        
+    
+      <a-entity collada-model="#tree"
+            position="0 0 0"
+            scale="0.05 0.05 0.05"
+            class="clickable"
+            gesture-handler>
+        </a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
