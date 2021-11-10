@@ -24,10 +24,7 @@
     >
 
         <a-assets>
-            <a-asset-item
-              id="bowser"
-              src="./assets/C25M/model.dae"
-            >
+            <a-asset-item id="bowser" src="./assets/C25M/model.dae">
             </a-asset-item>
           </a-assets>
     
@@ -38,15 +35,7 @@
             cursor="fuse: false; rayOrigin: mouse;"
             id="markerA"
           >
-            <a-entity
-              id="bowser-model"
-              collada-model="#bowser"
-              position="0 0 0"
-              scale="0.05 0.05 0.05"
-              class="clickable"
-              gesture-handler
-            >
-            </a-entity>
+            <a-entity id="bowser-model" collada-model="#bowser"></a-entity>
 
       </a-marker>
       <a-entity camera></a-entity>
