@@ -22,17 +22,31 @@
       gesture-detector
       id="scene"
     >
-
     <a-assets>
-        <a-asset-item id="tree-obj" src="./assets/apartment-house-obj/apartment-house.obj"></a-asset-item>
-        <a-asset-item id="tree-mtl" src="./assets/apartment-house-obj/apartment-house.mtl"></a-asset-item>
+        <a-asset-item
+          id="bowser"
+          src="./assets/C25M/model.glb"
+        >
+        </a-asset-item>
       </a-assets>
-    
-        <a-marker preset="hiro">
-            <!-- Adding an OBJ file to an AR Project-->
-            <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl"></a-entity>
-                  
-          </a-marker>
+
+      <a-marker
+        preset="hiro"
+        raycaster="objects: .clickable"
+        emitevents="true"
+        cursor="fuse: false; rayOrigin: mouse;"
+        id="markerA"
+      >
+        <a-entity
+          id="bowser-model"
+          gltf-model="#bowser"
+          position="0 0 0"
+          scale="0.05 0.05 0.05"
+          class="clickable"
+          gesture-handler
+        >
+        </a-entity>
+      </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
   </body>
