@@ -1,9 +1,9 @@
 <!doctype html>
 <html>
     <head>
-        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="assets/aframe.min.js"></script>
         <script src="assets/aframe-ar.js"></script>
-        <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+        <script src="assets/aframe-extras.loaders.min.js"></script>
         <script src="assets/gesture-detector.js"></script>
         <script src="assets/gesture-handler.js"></script>
     </head>
@@ -25,7 +25,7 @@
                 ></a-asset-item>
             </a-assets>
 
-            <a-marker-camera preset='custom' type='pattern' url='assets/pattern-pizza3.patt'>
+            <a-marker preset='custom' type='pattern' url='assets/pattern-pizza3.patt'>
                 <a-entity
                 id="bowser-model"
                 scale="17.906402725973187 17.906402725973187 17.906402725973187"
@@ -34,7 +34,7 @@
                 class="clickable"
                 gesture-handler
             ></a-entity>
-            </a-marker-camera>
+            </a-marker>
             <a-entity camera></a-entity>
         </a-scene>
     </body>
