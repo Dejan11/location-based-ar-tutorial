@@ -5094,7 +5094,11 @@ AFRAME.registerComponent('arjs-anchor', {
                 markerParameters.type = 'barcode'
                 markerParameters.barcodeValue = 1001
                 markerParameters.markersAreaEnabled = true
-            } else if (_this.data.type === 'barcode') {
+            } else if( _this.data.preset === 'custom' ){ 
+				markerParameters.type = 'pattern';
+				markerParameters.patternUrl = _this.data.patternUrl; 
+				markerParameters.markersAreaEnabled = false
+			} else if (_this.data.type === 'barcode') {
                 markerParameters = {
                     type: _this.data.type,
                     changeMatrixMode: 'modelViewMatrix',
@@ -5105,11 +5109,7 @@ AFRAME.registerComponent('arjs-anchor', {
                 markerParameters.type = _this.data.type
                 markerParameters.patternUrl = _this.data.patternUrl;
                 markerParameters.markersAreaEnabled = false
-            }else if( _this.data.preset === 'custom' ){ 
-				arProfile.defaultMarkerParameters.type = 'pattern';
-				arProfile.defaultMarkerParameters.patternUrl = _this.data.patternUrl; 
-				arProfile.defaultMarkerParameters.markersAreaEnabled = false
-			}
+            }
 
             markerParameters.minConfidence = _this.data.minCondidence;
             markerParameters.smooth = _this.data.smooth;
