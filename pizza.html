@@ -21,19 +21,18 @@
             <a-assets>
                 <a-asset-item
                     id="animated-asset"
-                     src="assets/asset2.glb"
+                     src="assets/pizza.glb"
                 ></a-asset-item>
             </a-assets>
 
-            <a-marker preset='custom' type='pattern' url='assets/pattern-pizza3.patt'>
+            <a-marker preset="custom" type="pattern" url="assets/pattern-pizza3.patt">
                 <a-entity
                 id="bowser-model"
-                scale="17.906402725973187 17.906402725973187 17.906402725973187"
+                scale="5 5 5"
                 animation-mixer="loop: repeat"
                 gltf-model="#animated-asset"
                 class="clickable"
-                gesture-handler
-            ></a-entity>
+                gesture-handler></a-entity>
             </a-marker>
             <a-entity camera></a-entity>
         </a-scene>
