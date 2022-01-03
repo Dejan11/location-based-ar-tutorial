@@ -1,23 +1,27 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>GeoAR.js Jadran Palata Pravde</title>
-    <script src="assets/aframe.min.js"></script>
+    <title>GeoAR.js demo</title>
+    <script src='assets/aframe.min.js'></script>
     <script src="assets/aframe-ar.min.js"></script>
     <script src="assets/aframe-extras.loaders.min.js"></script>
     <script>
-        THREEx.ArToolkitContext.baseURL = '../'
+        THREEx.ArToolkitContext.baseURL = 'https://dejan11.github.io/'
     </script>
 </head>
 
+<script src="assets/script.js"></script>
 <body style='margin: 0; overflow: hidden;'>
     <a-scene
-        vr-mode-ui="enabled: false"
+       vr-mode-ui="enabled: false"
 		embedded
         arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
-        <a-entity glb-model="assets/kuca_bez_parka3.glb?dl=1" rotation="0 180 0" scale="100 100 100" gps-entity-place="longitude: 20.078834; latitude: 45.124247;" animation-mixer/>
-        <a-camera gps-camera rotation-reader></a-camera>
+        <a-camera gps-camera rotation-reader>
+        </a-camera>
+        <a-assets>
+        </a-assets>
 	</a-scene>
 </body>
