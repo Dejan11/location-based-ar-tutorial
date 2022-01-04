@@ -21,8 +21,7 @@ var models = [
         url: './assets/palata_pravde.glb',
         scale: '1 1 1',
         info: 'Jadran',
-        rotation: '0 0 0',
-        //position: '0 0 0'
+        rotation: '0 0 0'
     },
 ];
 
