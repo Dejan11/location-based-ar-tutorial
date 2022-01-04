@@ -22,7 +22,7 @@ var models = [
         scale: '5 5 5',
         info: 'Jadran',
         rotation: '180 0 0',
-        position: '0 -15 0'
+        position: '0 0 0'
     },
 ];
 
