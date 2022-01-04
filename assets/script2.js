@@ -9,8 +9,8 @@ function staticLoadPlaces() {
         {
             name: 'Pokèmon',
             location: {
-                lat: 45.1243116,
-                lng: 20.0794713,
+                lat: 45.1242565,
+                lng: 20.0788571,
             },
         },
     ];
@@ -19,7 +19,7 @@ function staticLoadPlaces() {
 var models = [
     {
         url: './assets/kuca_bez_parka3.glb',
-        scale: '0.09 0.09 0.09',
+        scale: '0.3 0.3 0.3',
         info: 'Jadran',
         rotation: '0 0 0',
     },
