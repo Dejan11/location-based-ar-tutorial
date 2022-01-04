@@ -19,10 +19,10 @@ function staticLoadPlaces() {
 var models = [
     {
         url: './assets/kuca_bez_parka3.glb',
-        scale: '3 3 3',
+        scale: '5 5 5',
         info: 'Jadran',
         rotation: '180 0 0',
-        position: '0 15 0'
+        position: '0 -15 0'
     },
 ];
 
