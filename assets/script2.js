@@ -19,9 +19,9 @@ function staticLoadPlaces() {
 var models = [
     {
         url: './assets/palata_pravde.glb',
-        scale: '5 5 5',
+        scale: '4 4 4',
         info: 'Jadran',
-        rotation: '0 0 0',
+        //rotation: '0 0 0',
         //position: '0 0 0'
     },
 ];
@@ -59,7 +59,6 @@ function renderPlaces(places) {
         setModel(models[modelIndex], model);
 
         model.setAttribute('animation-mixer', '');
-        model.setAttribute('gesture-handler', '');
 
         scene.appendChild(model);
     });
