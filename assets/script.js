@@ -24,7 +24,7 @@ function renderPlaces(places) {
         let longitude = place.location.lng;
         let asset = document.createElement('a-asset-item');
         asset.setAttribute('id', "glb-asset");
-        asset.setAttribute('src', 'assets/kuca_bez_parka3.glb');
+        asset.setAttribute('src', 'assets/palata_pravde.glb');
         assets.appendChild(asset);
 
         let model = document.createElement('a-entity');
